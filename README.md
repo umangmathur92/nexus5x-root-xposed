@@ -12,21 +12,27 @@ This process has 2 Parts:
 * The System Image with target "7.1.1 (Google Play)" can not be rooted
 * Set AVD Name: "MyAVD" to complete the AVD creation process
 * Start emulator (You may chooose to remove the -enable-kvm argument if your machine doesn't support this feature):
+  
   `$SDK_PATH/emulator/emulator -avd MyAVD -writable-system -selinux permissive -qemu -enable-kvm`
 * Wait for boot to complete
 * Restart adbd as root and remount system as writable:
+  
   `adb root && adb remount`
 * Install Superuser.apk:
+  
   `adb install SuperSU/common/Superuser.apk`
 * Push su and update permissions:
   `adb push SuperSU/x86/su /system/xbin/su`
   
   `adb shell chmod 0755 /system/xbin/su`
 * Set SELinux Permissive: 
+  
   `adb shell setenforce 0`
 * Install SuperSU's su to system: 
+  
   `adb shell su --install`
 * Run SuperSU's su as daemon: 
+  
   `adb shell su --daemon&`
 * Open the SuperSU app on the AVD, and it will prompt you to update the 'su' binary - Click `Accept` and use `Normal` installation
 * Installation will fail - no need to worry, just exit the app. It will still work.
@@ -34,6 +40,7 @@ This process has 2 Parts:
 
 Note: Superuser may not always persist after reboot. This can be remedied easily
 * Run SuperSU's su as daemon: 
+  
   `adb shell su --daemon&`
 * Root should now work again
 
@@ -41,6 +48,7 @@ Note: Superuser may not always persist after reboot. This can be remedied easily
 **2) Installing Xposed Framework v89 (Using XposedInstaller_3.1.5.apk)**
 
 * Install Xposed on the AVD using the XposedInstaller APK file
+  
   `adb install XposedInstaller_3.1.5.apk`
 * Open the 'Xposed' Manager App and click on Install
 * Reboot when prompted
