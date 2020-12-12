@@ -22,6 +22,7 @@ This process has 2 Parts:
   
   `adb install SuperSU/common/Superuser.apk`
 * Push su and update permissions:
+  
   `adb push SuperSU/x86/su /system/xbin/su`
   
   `adb shell chmod 0755 /system/xbin/su`
