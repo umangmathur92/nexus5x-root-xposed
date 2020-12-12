@@ -11,7 +11,7 @@ This process has 2 Parts:
 * The x86 Image's target should be either "Android 7.1.1 (Google APIs)" or "Android 7.1.1"
 * The System Image with target "7.1.1 (Google Play)" can not be rooted
 * Set AVD Name: "MyAVD" to complete the AVD creation process
-* Start emulator (You may chooose to remove the -enable-kvm argument if your machine doesn't support this feature):
+* Start emulator (You may chooose to remove the `-enable-kvm` argument if your machine doesn't support this feature):
   
   `$SDK_PATH/emulator/emulator -avd MyAVD -writable-system -selinux permissive -qemu -enable-kvm`
 * Wait for boot to complete
