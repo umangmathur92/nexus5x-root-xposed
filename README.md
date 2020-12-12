@@ -51,7 +51,8 @@ Note: Superuser may not always persist after reboot. This can be remedied easily
 * Install Xposed on the AVD using the XposedInstaller APK file
   
   `adb install XposedInstaller_3.1.5.apk`
-* Open the 'Xposed' Manager App and click on Install
-* Reboot when prompted
+* Open the 'Xposed' Installer/Manager App and click on Install
+* Grant the Superuser request when prompted
+* Reboot when prompted by the UI
 * Wait for reboot to complete
 * Open the 'Xposed' Manager App. You should be able to see text indicating that Xposed Version 89 is installed
