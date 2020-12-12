@@ -1,6 +1,10 @@
 
 # Rooting the Nexus 5X AVD and installing Xposed
 
+
+**Link to Video: https://youtu.be/67kigArRQw0**
+
+
 This process has 2 Parts:
 
 **1) Creating and Rooting an Android Studio AVD - Nexus 5X, Android 7.1.1 (Nougat, API 25)**
@@ -58,5 +62,3 @@ Note: Superuser may not always persist after reboot. This can be remedied easily
 * Open the 'Xposed' Manager App. You should be able to see text indicating that Xposed Version 89 is installed
 
 
-
-**Link to Video: https://youtu.be/67kigArRQw0**
