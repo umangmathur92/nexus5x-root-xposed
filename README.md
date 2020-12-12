@@ -17,7 +17,7 @@ This process has 2 Parts:
 * Set AVD Name: "MyAVD" to complete the AVD creation process
 * Start emulator (You may chooose to remove the `-enable-kvm` argument if your machine doesn't support this feature):
   
-  `$SDK_PATH/emulator/emulator -avd MyAVD -writable-system -selinux permissive -qemu -enable-kvm`
+  `/path/to/android/sdk/emulator/emulator -avd MyAVD -writable-system -selinux permissive -qemu -enable-kvm`
 * Wait for boot to complete
 * Restart adbd as root and remount system as writable:
   
