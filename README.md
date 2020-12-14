@@ -40,7 +40,7 @@ This process has 2 Parts:
   
   `adb shell su --daemon&`
 * Open the SuperSU app on the AVD, and it will prompt you to update the 'su' binary - Click `Accept` and use `Normal` installation
-* Installation will fail - no need to worry, just exit the app. It will still work.
+* Installation will fail - no need to worry, just exit the app (No need to reboot). It will still work.
 * The AVD is now rooted with SuperSU
 
 Note: Superuser may not always persist after reboot. This can be remedied easily
